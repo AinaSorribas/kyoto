@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body.home{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.0) 100%),url(./img/arashiyama.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+
+}
+nav {
+    text-align: center;
+    color: white;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    
+}
+
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 0;
+}
+
+nav ul li::before {
+    content: "";
+    width: 10px;
+}
+
+nav ul li a {
+    color: inherit;
+    border: none;
+}
+
+
+nav ul li a:hover {
+    border: none;    
+}
+
+nav li.active {
+    font-weight: 700;
+}
+
+nav li.active::before {
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.pcontainer{
+    font-size: 14rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0;
+}
+.bodywhat{
+  background-color:darkseagreen;
+}
+
+.navfosc{
+    background-color: #1a1a1a;
+}
+.logodiv{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    font-size: 2rem;
+    
+}
+nav a:visited{
+    color: white;
+}
+.whatpresentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.ppresentation{
+    text-align: justify;
+    font-family: 'lora', sans-serif;
+    margin-top: 1rem;
+}
+.whatpresentation{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+img{
+    width: 80%;
+}
+.allwhat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eachwhat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 4%;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    width: 95%;
+}
+.titoleach{
+    margin-bottom: 1rem;
+}
+.description{
+    width: 80%;
+    text-align: justify;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'lora', sans-serif;
+}
+iframe{
+    width: 100%;
+    height: auto;    
+  }
+  figure{
+    padding-bottom: 2rem;
+  }
+.figcaptionvideo{
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+.video-fluid {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+  .video-fluid-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .video-fluid::before {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+  .detalldiv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+  }
+  .detallh1{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .detallp{
+    font-size: 1rem;
+    text-align: justify;
+    font-family: 'lora', sans-serif;
+    padding-bottom: 2rem;
+  }
+  .llistadetall{
+   
+     list-style: none;
+     padding-bottom: 2rem;
+    
+    
+  }
+  .detallli:before{    
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+
+    
+  }
+  .detallli{
+    font-size: 1rem;
+    font-family: 'lora', sans-serif;
+    position: relative;
+    margin-bottom: 1rem;
+    list-style-image: url(img/tori2.png); 
+  }
+  .navdetall{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+
+  }
+  .navdetallli{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .plink{
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+  .ullink{
+    margin-bottom: 2rem;
+  }
+  .h2link{
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  button{
+    width: 3rem;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15%;
+    
+  }
+
+
+
+footer{
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media (280px < width <= 768px) { /*********************MOBIL*/
+
+
+    .homemain{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pcontainer{
+        font-size: 5rem;
+        
+    }
+    nav ul li{
+        padding-bottom: 0.7rem;
+    }
+    .logo{
+        padding-bottom: 1rem;
+    }
+    .navfoscdetall{
+        background-color: #1a1a1a;
+      }
+}
+
+@media (768px < width <= 1024px ) { /******************TABLET*/
+
+        nav {
+        text-align: center;
+        padding-top:1rem;
+        
+        
+    }
+    nav ul {
+        padding-left: 0;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 400;
+  
+    }
+    
+    nav ul li::before {
+        content: " | ";
+        width: 10px;
+    }
+    
+    nav ul li:first-child::before {
+        content: "";
+    }
+    
+    nav ul li a {
+        color: inherit;
+        border: none;
+    }
+    .homemain{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pcontainer{
+        font-size: 14rem;
+        
+    }
+    .navfosc{
+        padding-bottom: 1rem;
+        background-color: #1a1a1a;
+    }
+    .logo{
+        font-size: 3rem;
+    }
+    .eachwhat{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 2fr;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-radius: 25px;
+    }
+    .titoleach{
+        margin-bottom: 0;
+        padding-left: 1rem;
+    }
+    .detallp{
+        font-size: 1.5rem;
+    }
+    .detallli{
+        font-size: 1.5rem;
+    }
+    .navdetall{
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        padding-top: 1.5rem;
+      }
+      .navdetallli::before{
+        content: "";
+      }
+      .navfoscdetall{
+        background-color: #1a1a1a;
+      }
+      figure{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 2rem;
+      }
+      button{
+        width: 5rem;
+        height: 3rem;
+        margin-bottom: 1.5rem;
+        border-radius: 15%;
+        font-size: 1.2rem;
+        
+      }
+      
+    
+}
+
+
+@media (width > 1024px) { /*****************************DESKTOP*/
+   
+    
+    nav {
+        text-align: right;
+        padding-right: 2.5rem;
+        padding-top:1rem;
+        
+    }
+    nav ul {
+        padding-left: 0;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding-left: 0;
+    }
+    
+    nav ul li::before {
+        content: " | ";
+        width: 10px;
+    }
+    
+    nav ul li:first-child::before {
+        content: "";
+    }
+    
+    nav ul li a {
+        color: inherit;
+        border: none;
+    }
+    .pcontainer{
+        font-size: 14rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 0;
+    }
+    .homemain{
+        position: fixed;
+       
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    .navfosc{
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2.5rem;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+    .allwhat{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+       
+    }
+    .eachwhat{
+        height: 700px;
+        width: 430px;
+        border-radius: 25px;
+    }
+    .titoleach{
+        font-size: 2rem;
+    }
+    .description{
+        font-size: 1.4rem;
+    }
+    .ppresentation{
+        width: 60%;
+        font-size: 1.5rem;
+    }
+    .detallp{
+        font-size: 1.5rem;
+    }
+    .detallli{
+        font-size: 1.5rem;
+    }    
+    .navfoscdetall{
+        background-color: #1a1a1a;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        padding-left: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    .navsensedetall{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navegadordetall{
+        display: flex;
+        justify-content: center;
+    }
+     .navdetallli::before{
+        content: "";
+      }
+      figure{
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-bottom: 2rem;
+      }
+      .plink{
+        font-size: 1.5rem;
+        line-height: 3rem;
+      }
+      button{
+        width: 7rem;
+        height: 4rem;
+        margin-bottom: 1.5rem;
+        border-radius: 15%;
+        font-size: 1.5rem;
+        
+      }
+    footer{
+        font-size: 1.2rem;
+    }
+    .linkfooter{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    
+   
+}
+
+@media (1025px < width <= 1290px) { 
+    .eachwhat{
+        height: 750px;
+        width: 330px;
+        border-radius: 25px;
+    }
+}
